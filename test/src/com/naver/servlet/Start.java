@@ -57,5 +57,13 @@ public class Start extends HttpServlet {
 		request.setCharacterEncoding("uec-kr");
 		doGet(request, response);
 	}
+	
+	
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+	
+		System.out.println("»Æ¿Œ!");
+		return super.clone();
+	}
 
 }
