@@ -21,12 +21,15 @@ import javax.sql.DataSource;
 
 import com.naver.vo.Member;
 
+//연지 수정 toString 메소드 추가
 public class MemberDAO {
 	DataSource ds;
 	Connection con;
 	PreparedStatement pstmt;
 	ResultSet rs;
 	int result;
+	
+	
 	
 	public MemberDAO() {
 		try {
@@ -179,5 +182,9 @@ public class MemberDAO {
 			}
 		}
 		return list;
+	}
+	
+	public String toString() {
+		return "check";
 	}
 }
