@@ -31,12 +31,12 @@ public class Start extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		response.setContentType("text/html;charset=uec-kr");
+		response.setContentType("text/html;charset=euc-kr");	//찬미 오류수정
 		String id = "";
 		String cookie = request.getHeader("Cookie");
 		if (cookie != null) {
 			Cookie cookies[] = request.getCookies();
-			for (int i = 0; i < cookie.length(); i++) {
+			for (int i = 0; i < cookies.length; i++) {		//찬미 오류수정
 				if (cookies[i].getName().contentEquals("id")) {
 					cookies[i].getValue();
 				}
