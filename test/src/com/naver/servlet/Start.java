@@ -10,6 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
+
+
 /**
  * Servlet implementation class Start
  */
@@ -58,12 +61,12 @@ public class Start extends HttpServlet {
 		doGet(request, response);
 	}
 	
-	
-	@Override
-	protected Object clone() throws CloneNotSupportedException {
-	
-		System.out.println("»Æ¿Œ!");
-		return super.clone();
-	}
+
+@Override
+protected void finalize() throws Throwable {
+	// TODO Auto-generated method stub
+	super.finalize();
+}
+
 
 }
