@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
+/**연지!연지야
  * Servlet implementation class Start
  */
 @WebServlet("/cookielogin")
@@ -22,6 +22,7 @@ public class Start extends HttpServlet {
 	 */
 	public Start() {
 		super();
+		//연지가 여깄다
 		// TODO Auto-generated constructor stub
 	}
 
@@ -54,6 +55,7 @@ public class Start extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		request.setCharacterEncoding("uec-kr");
+		request.getClass();
 		doGet(request, response);
 	}
 

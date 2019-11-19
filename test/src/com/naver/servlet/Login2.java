@@ -51,6 +51,7 @@ public class Login2 extends HttpServlet {
 			cookie.setMaxAge(2*60);
 			//클라이언트로 쿠키값을 전송합니다.
 			response.addCookie(cookie);
+			System.out.println("ddfghfgh");
 		}
 		if(result==1) {
 			HttpSession session = request.getSession();
