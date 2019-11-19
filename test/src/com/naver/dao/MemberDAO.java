@@ -184,6 +184,12 @@ public class MemberDAO {
 		return list;
 	}
 	
+	
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		// 4:26 분에 한거
+		return super.clone();
+	}
 	public String toString() {
 		return "check";
 	}
