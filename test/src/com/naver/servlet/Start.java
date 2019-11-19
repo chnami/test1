@@ -21,7 +21,7 @@ public class Start extends HttpServlet {
 	 * @see HttpServlet#HttpServlet()
 	 */
 	public Start() {
-		super();
+		super();//???
 		// TODO Auto-generated constructor stub
 	}
 
